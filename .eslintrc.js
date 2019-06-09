@@ -1,24 +1,32 @@
 module.exports = {
     "env": {
-        "browser": true,
-        "es6": true
+        "browser": true
     },
     "extends": "eslint-config-airbnb",
-    "plugins":["react"],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+    "plugins": ["react", "jsx-a11y", "import"],
     "parserOptions": {
         "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
             "jsx": true
         },
-        "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/prefer-stateless-function": [
+            "off"
+        ],
+        "react/jsx-filename-extension": "off"
     }
 };
