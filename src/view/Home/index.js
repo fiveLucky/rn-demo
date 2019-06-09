@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('a', () => a);
+// AppRegistry.registerComponent('a', () => a);
