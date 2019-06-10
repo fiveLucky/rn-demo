@@ -1,15 +1,18 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "es6": true
     },
     "extends": "eslint-config-airbnb",
     "plugins": ["react", "jsx-a11y", "import"],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
-            "jsx": true
+            "jsx": true,
+            "arrowFunctions": true
         },
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 6
     },
     "rules": {
         "linebreak-style": [
@@ -24,9 +27,8 @@ module.exports = {
             "error",
             "always"
         ],
-        "react/prefer-stateless-function": [
-            "off"
-        ],
-        "react/jsx-filename-extension": "off"
+        "react/prefer-stateless-function": "off",
+        "react/jsx-filename-extension": "off",
+        "class-methods-use-this": "off"
     }
 };

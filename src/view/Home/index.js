@@ -1,16 +1,19 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+
 
 import React, { Component } from 'react';
 
-import { AppRegistry, Text, View } from 'react-native';
+import {
+  AppRegistry, Text, View, Button, Alert,
+} from 'react-native';
 
 import styles from './style';
 
+
 export default class a extends Component {
+  onPress() {
+    Alert.alert('hello!');
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -28,6 +31,12 @@ export default class a extends Component {
           {'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Button
+          onPress={this.onPress}
+          title="Learn More"
+          color="#841584"
+          accessibilityLabel="Learn more about this purple button"
+        />
       </View>
     );
   }
