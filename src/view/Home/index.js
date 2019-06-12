@@ -14,6 +14,8 @@ export default class a extends Component {
     Alert.alert('hello!');
   }
 
+  onChange = () => { }
+
   render() {
     return (
       <View style={styles.container}>
